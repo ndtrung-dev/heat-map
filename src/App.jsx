@@ -185,10 +185,10 @@ function App() {
           .style(
             "left",
             e.clientX + SVG_PADDING + 20 + 100 > window.innerWidth
-              ? e.clientX + 20 - 100 + "px"
+              ? e.clientX - 40 - 100 + "px"
               : e.clientX + 20 + "px"
           )
-          .style("top", e.clientY + 20 + "px");
+          .style("top", e.clientY - 40 + "px");
       })
       .on("mouseleave", () => {
         tooltip.style("display", "none").attr("data-year", "").html("");
